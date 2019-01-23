@@ -1,0 +1,33 @@
+{
+    "name": "youtube-live-comment",
+    "version": "0.0.1",
+    "description": "Get youtube live comments",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "yarn babel src --watch --out-dir dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tada-tsu/youtube-live-comment.git"
+    },
+    "keywords": [
+        "youtube",
+        "youtubelive"
+    ],
+    "author": "Tadatsugu Ono <tada.purple.haze@gmail.com> (https://github.com/tada-tsu)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tada-tsu/youtube-live-comment/issues"
+    },
+    "homepage": "https://github.com/tada-tsu/youtube-live-comment#readme",
+    "dependencies": {
+        "libxmljs": "^0.19.5",
+        "puppeteer": "^1.11.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1"
+    }
+}
