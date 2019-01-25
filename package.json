@@ -22,7 +22,6 @@
     },
     "homepage": "https://github.com/tada-tsu/youtube-live-comment#readme",
     "dependencies": {
-        "libxmljs": "^0.19.5",
         "puppeteer": "^1.11.0"
     },
     "devDependencies": {
