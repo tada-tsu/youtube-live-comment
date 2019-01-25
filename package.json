@@ -1,6 +1,6 @@
 {
     "name": "youtube-live-comment",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "description": "Get youtube live comments",
     "main": "dist/index.js",
     "scripts": {
