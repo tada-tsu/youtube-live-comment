@@ -38,7 +38,7 @@ class YoutubeLiveComment {
 
 
   commentUpdate(returnJson = false) {
-    if (document.readyState != "complete") {
+    if (document.readyState != "complete" || !(document.querySelector("#live-chat-iframe") || document.querySelector("#chatframe"))) {
       return returnJson ? "[]" : [];
     }
 
