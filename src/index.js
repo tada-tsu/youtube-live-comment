@@ -104,5 +104,5 @@ class YoutubeLiveComment {
 
 export default YoutubeLiveComment
 export {
-    YoutubeLiveComment as YoutubeLiveCommentOnPage
+    YoutubeLiveCommentOnPage,
 } 

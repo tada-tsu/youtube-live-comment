@@ -3,7 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.YoutubeLiveCommentOnPage = exports.default = void 0;
+Object.defineProperty(exports, "YoutubeLiveCommentOnPage", {
+  enumerable: true,
+  get: function () {
+    return _onPage.default;
+  }
+});
+exports.default = void 0;
 
 var _puppeteer = _interopRequireDefault(require("puppeteer"));
 
@@ -109,6 +115,5 @@ class YoutubeLiveComment {
 
 }
 
-exports.YoutubeLiveCommentOnPage = YoutubeLiveComment;
 var _default = YoutubeLiveComment;
 exports.default = _default;
