@@ -33,6 +33,9 @@ class YoutubeLiveComment {
      * @memberof YoutubeLiveComment
      */
     commentUpdate(returnJson = false) {
+        if (document.readyState != "complete") {
+            return returnJson ? "[]" : []
+        }
         this._newComments = []
         
         const commentSelectors = {

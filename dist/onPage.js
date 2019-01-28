@@ -38,6 +38,10 @@ class YoutubeLiveComment {
 
 
   commentUpdate(returnJson = false) {
+    if (document.readyState != "complete") {
+      return returnJson ? "[]" : [];
+    }
+
     this._newComments = [];
     const commentSelectors = {
       normal: "yt-live-chat-text-message-renderer",
