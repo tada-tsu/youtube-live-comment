@@ -5,7 +5,8 @@
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "yarn babel src --watch --out-dir dist"
+        "watch:app": "yarn babel src/onPageForApp* --watch --out-dir dist --config-file ./.babelrc.forapp",
+        "watch": "yarn watch:app & yarn babel src --watch --out-dir dist --ignore 'src/*ForApp*'"
     },
     "repository": {
         "type": "git",
@@ -27,6 +28,8 @@
     "devDependencies": {
         "@babel/cli": "^7.2.3",
         "@babel/core": "^7.2.2",
-        "@babel/preset-env": "^7.3.1"
+        "@babel/plugin-transform-template-literals": "^7.2.0",
+        "@babel/preset-env": "^7.3.1",
+        "babel-plugin-transform-remove-strict-mode": "^0.0.2"
     }
 }
