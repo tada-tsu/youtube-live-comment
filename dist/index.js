@@ -7,8 +7,6 @@ exports.YoutubeLiveCommentOnPage = exports.default = void 0;
 
 var _puppeteer = _interopRequireDefault(require("puppeteer"));
 
-var _libxmljs = _interopRequireDefault(require("libxmljs"));
-
 var _onPage = _interopRequireDefault(require("./onPage.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

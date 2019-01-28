@@ -1,5 +1,4 @@
 import puppeteer from "puppeteer"
-import libxmljs from "libxmljs"
 import YoutubeLiveCommentOnPage from "./onPage.js"
 
 
