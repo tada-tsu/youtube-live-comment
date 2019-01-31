@@ -63,7 +63,7 @@ class YoutubeLiveComment {
             const isPaid = comment.tagName == commentSelectors.paid.toUpperCase()
 
             if (
-                typeof comment.querySelector("#author-photo img").src === "undefined" &&
+                typeof comment.querySelector("#author-photo img").src === "undefined" ||
                 comment.querySelector("#author-photo img").src === ""
             ) {
                 break
