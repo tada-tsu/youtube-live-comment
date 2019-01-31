@@ -56,6 +56,10 @@ class YoutubeLiveComment {
       const comment = newComments[i];
       const isPaid = comment.tagName == commentSelectors.paid.toUpperCase();
 
+      if (typeof comment.querySelector("#author-photo img").src === "undefined" && comment.querySelector("#author-photo img").src === "") {
+        break;
+      }
+
       this._newComments.comments.push({
         paid: isPaid,
         id: comment.id,
