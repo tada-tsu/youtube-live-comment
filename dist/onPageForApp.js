@@ -76,6 +76,22 @@ class YoutubeLiveComment {
     return this.getNewComments(returnJson);
   }
   /**
+   *
+   *
+   * @param {boolean} [returnJson=false]
+   * @returns {{ viewCount: string }|string}
+   * @memberof YoutubeLiveComment
+   */
+
+
+  viewCountUpdate(returnJson = false) {
+    const elm = document.querySelector(".metric-count-viewership.analytics-summary-metric-header-number");
+    const data = {
+      viewCount: elm ? elm.textContent.trim() : null
+    };
+    return this._getData(data, returnJson);
+  }
+  /**
    * get new comments
    *
    * @param {boolean} [json=false] change return data type
