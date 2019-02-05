@@ -103,6 +103,17 @@ class YoutubeLiveComment {
     }
 
 
+    viewCountUpdateForViewer(returnJson = false){
+        const elm = document.querySelector("yt-view-count-renderer")
+
+        const data = {
+            viewCount: elm ? parseInt(elm.textContent.replace(/^(\d+).*$/, "$1")) : null
+        }
+
+        return this._getData(data, returnJson)
+    }
+    
+
 
     /**
      * get new comments
