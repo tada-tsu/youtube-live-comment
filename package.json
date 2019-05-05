@@ -23,7 +23,6 @@
     },
     "homepage": "https://github.com/tada-tsu/youtube-live-comment#readme",
     "dependencies": {
-        "puppeteer": "^1.11.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",
