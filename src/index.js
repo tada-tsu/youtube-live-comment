@@ -1,5 +1,5 @@
 // import puppeteer from "puppeteer"
-// import YoutubeLiveCommentOnPage from "./onPage.js"
+import YoutubeLiveCommentOnPage from "./onPage.js"
 
 
 // class YoutubeLiveComment {
@@ -103,6 +103,6 @@
 // }
 
 // export default YoutubeLiveComment
-// export {
-//     YoutubeLiveCommentOnPage,
-// } 
+export {
+    YoutubeLiveCommentOnPage,
+} 
